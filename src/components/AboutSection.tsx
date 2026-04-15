@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Zap, Shield, Users } from "lucide-react";
+import { Zap, Shield, Users, Github } from "lucide-react";
 
 const stats = [
   { icon: Zap, label: "Innovation First", desc: "Cutting-edge tech at every layer" },
@@ -35,6 +35,17 @@ const AboutSection = () => {
               solutions — we cover the full technology spectrum, empowering businesses to 
               operate smarter, faster, and more efficiently.
             </p>
+            <div className="mt-6 flex items-center gap-2">
+              <a
+                href="https://github.com/Roopak-tech"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors font-semibold"
+              >
+                <Github size={20} />
+                View on GitHub
+              </a>
+            </div>
           </motion.div>
 
           <motion.div
