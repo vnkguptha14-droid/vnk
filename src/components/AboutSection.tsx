@@ -35,17 +35,6 @@ const AboutSection = () => {
               solutions — we cover the full technology spectrum, empowering businesses to 
               operate smarter, faster, and more efficiently.
             </p>
-            <div className="mt-6 flex items-center gap-2">
-              <a
-                href="https://github.com/Roopak-tech"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors font-semibold"
-              >
-                <Github size={20} />
-                View on GitHub
-              </a>
-            </div>
           </motion.div>
 
           <motion.div
@@ -69,6 +58,15 @@ const AboutSection = () => {
                 </div>
               </div>
             ))}
+            <a
+              href="https://github.com/Roopak-tech"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 rounded-xl border border-border bg-card p-6 text-primary hover:bg-primary/5 transition-colors"
+            >
+              <Github size={24} />
+              <span className="font-semibold">View on GitHub</span>
+            </a>
           </motion.div>
         </div>
       </div>
