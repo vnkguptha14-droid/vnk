@@ -271,7 +271,8 @@ const ProductsSection = () => {
               <img
                 src="https://www.weset.in/wp-content/uploads/2024/04/Screenshot-2024-04-05-175907.png"
                 alt="CCTV Camera"
-                className="w-20 h-14 md:w-24 md:h-20 object-contain drop-shadow-lg rounded"
+                className="w-20 h-14 md:w-24 md:h-20 object-contain drop-shadow-lg rounded brightness-110 contrast-110"
+                style={{ mixBlendMode: "multiply" }}
               />
             </motion.div>
           </div>
