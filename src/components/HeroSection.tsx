@@ -69,8 +69,9 @@ const HeroSection = () => {
             <span className="gradient-text text-glow">with Smart Surveillance</span>
           </h1>
 
+
           <p className="max-w-2xl mx-auto text-lg text-muted-foreground mb-10">
-            From cutting-edge software and AI/ML solutions to robust hardware and CCTV systems — Roopak Technologies delivers end-to-end technology that transforms business security.
+            From embedded systems and Smart Mini Computers to Wireless Control Boards, laptop forensic utilities, installation kits, and infotainment solutions — we combine hardware innovation, intelligent software, and AI-powered analytics to build comprehensive security ecosystems that work seamlessly for your business.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

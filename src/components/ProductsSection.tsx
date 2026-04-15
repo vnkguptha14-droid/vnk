@@ -187,6 +187,22 @@ const productImages = [
     ],
     category: "Control Systems"
   },
+  {
+    src: iotGateway,
+    title: "Infotainment Systems",
+    alt: "Infotainment and interactive display systems",
+    points: [
+      "We develop advanced infotainment solutions with beautiful, responsive UX/UI",
+      "Built with LVGL (Light and Versatile Graphics Library) for embedded displays",
+      "Cross-platform development using Flutter for mobile and web applications",
+      "Perfect for car infotainment, smart home control panels, and interactive kiosks",
+      "Real-time video playback, touch controls, and multi-language support",
+      "LVGL framework for resource-efficient graphics on embedded systems",
+      "Flutter development for iOS, Android, and Web platforms",
+      "Seamless integration with Security Panels, IoT Gateways, and surveillance systems"
+    ],
+    category: "Infotainment"
+  },
 ];
 
 const products = [
@@ -237,9 +253,28 @@ const ProductsSection = () => {
           <span className="text-xs font-semibold uppercase tracking-widest text-primary">
             What We Build
           </span>
-          <h2 className="font-heading text-3xl md:text-5xl font-bold mt-3 mb-4">
-            Our Product Categories
-          </h2>
+          <div className="flex items-center justify-center gap-4">
+            <h2 className="font-heading text-3xl md:text-5xl font-bold mt-3 mb-4">
+              Our Product Categories
+            </h2>
+            <motion.div
+              animate={{
+                scale: [1, 1.1, 1],
+                rotate: [0, 2, -2, 0],
+              }}
+              transition={{
+                duration: 3,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+            >
+              <img
+                src="https://www.weset.in/wp-content/uploads/2024/04/Screenshot-2024-04-05-175907.png"
+                alt="CCTV Camera"
+                className="w-20 h-14 md:w-24 md:h-20 object-contain drop-shadow-lg rounded"
+              />
+            </motion.div>
+          </div>
           <p className="text-muted-foreground max-w-xl mx-auto">
             We deliver technology across multiple domains, giving businesses the edge they need to thrive.
           </p>
@@ -247,13 +282,13 @@ const ProductsSection = () => {
 
         <div className="mb-10 text-center max-w-3xl mx-auto">
           <span className="text-xs font-semibold uppercase tracking-widest text-primary">
-            Hardware Highlights
+            What We Build
           </span>
           <h3 className="font-heading text-3xl sm:text-4xl font-bold mt-4">
-            Explore the Devices Powering Your Solutions
+            Explore the Devices Powering Your Solutions and What We Expertise
           </h3>
           <p className="text-muted-foreground mt-4">
-            Explore embedded systems, Smart Mini Computers and Wireless Control Boards, laptop forensic utilities, installation box kits, Smart Connection Ports, and security camera solutions that make our products tangible.
+            From embedded systems and Smart Mini Computers to Wireless Control Boards, laptop forensic utilities, installation kits, and security camera solutions—discover the devices and expertise that power every solution.
           </p>
         </div>
 
