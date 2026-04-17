@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Search } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -31,6 +32,13 @@ const Navbar = () => {
               {l.label}
             </a>
           ))}
+          <Link
+            to="/search"
+            className="flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+          >
+            <Search size={18} />
+            Search
+          </Link>
           <a
             href="#contact"
             className="rounded-lg bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity"
@@ -65,6 +73,14 @@ const Navbar = () => {
                   {l.label}
                 </a>
               ))}
+              <Link
+                to="/search"
+                onClick={() => setOpen(false)}
+                className="flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Search size={18} />
+                Search
+              </Link>
               <a
                 href="#contact"
                 onClick={() => setOpen(false)}
